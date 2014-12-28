@@ -1,39 +1,157 @@
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Nate Suri</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nate Suri</title>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    
+    
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		
-		<!-- scripts -->
-		<script src="assets/js/script.js"></script>
+		<!-- Social Circle Icons -->
+		<link rel='stylesheet' href='ss-social-circle/ss-social-circle.css'>
+		<script src='ss-social-circle/ss-social-circle.js'></script>
 		
-		<!-- styles -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="assets/css/style.css" />
 		
-	</head>	
-	
-	<body>
-	
-		<div id="container">
-			
-			<object type="image/svg+xml" data="assets/img/nate-logo.svg" class="logo">
-				NS Logo <!-- fallback image in CSS -->
-			</object>
-				
-			<div id="name">
-				<h1>Nate Suri</h1>
-				<h2>Filmmaker</h2>
-			</div> <!-- /name -->
-			
-			<div id="contact">
-				<a id="callout" href="https://www.youtube.com/watch?v=iC5BecsQnE0&list=LLpGYtPL0W41csL-ICEMox6Q">Recent Work</a>
-				<a href="http://www.vimeo.com/natesuri" target="_blank">Vimeo</a>
-				<a href="http://www.imdb.com/name/nm4634585/" target="_blank">IMDB</a>
-				<a href="http://www.linkedin.com/pub/nate-suri/46/302/458" target="_blank">LinkedIn</a>
-				<!-- <a href="http://www.twitter.com/nateosuri" target="_blank">Twitter</a> -->
+		<!-- Javascript -->
+		<script src="js/project.js"></script>
+		<script src="js/model.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/actions.js"></script>
+		<script src="js/click.js"></script>
+		<script src="js/keyPress.js"></script>
+		<script src="js/script.js"></script>
+		
+		<!-- CSS -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/media.css">
+
+  </head>
+  <body>
+  	
+  	<div id="mobile-arrows">
+  		<div class="left">
+  			<div id='left-arrow-outline'>
+  				<span class='left'></span>
+  				<span class='right'></span>
+  			</div>
+  		</div>
+  		<div class="right">
+  			<div id='right-arrow-outline'>
+  				<span class='left'></span>
+  				<span class='right'></span>
+  			</div>
+  		</div>
+  	</div>
+  		
+  	<div class="container background">
+  	
+  		<span class='info'>i</span>
+  		<!-- 
+<div id='keys'>
+  			<div class='row'><span id='up'>up</span></div>
+  			<div class='row'><span id='left'>left</span>
+  			<span id='down'>down</span>
+  			<span id='right'>right</span></div>
+  		</div>
+ -->
+			<div id="display">
+				<p>hello</p>
+			</div> <!-- /display -->
+
+		
+		<div id='callout-buttons' class="row">
+			<div class="col-sm-12">
+				<div id='tv-btn' class='button'>Television</div>
+				<div id='video-btn' class='button'>Video</div>
+				<div id='film-btn' class='button'>Film</div>
 			</div>
-	
-		</div> <!-- /container -->
-	</body>
-	
+		</div>
+		
+	</div> <!-- /container -->
+    
+		<div id="left-bar"> <div id='left-arrow' class='active'></div><a href="#" class="title">Television</a></div>
+		
+		<div id="down-bar"> <div id='down-arrow' class='active'></div><a href="#" class="title">Videography</a></div>
+		
+		<div id="right-bar"> <a href="#" class="title">Film</a> <div id='right-arrow' class='active'></div> </div>
+
+		<div id='popover' class='inactive container'>
+			<div class="close">
+				<span class="left-x"></span>
+				<span class="right-x"></span>
+			</div>
+			<div class='row'>
+				<ul>
+					<li class='first'>
+						<ul class='social-media  ss-icon ss-social-circle'>
+							<li><a href="https://twitter.com/nateosuri" target="_blank">twitter</a></li>
+							<li><a href="http://instagram.com/natesuri" target="_blank">instagram</a></li>
+							<li>Linkedin</li>
+							<li><a href="http://vimeo.com/natesuri" target="_blank">Vimeo</a></li>
+						</ul>
+					</li>
+					<li>Download CV</li>
+					<li class="contact">Contact Me 
+					
+						<div class="open-arrow closed-arrow">
+							<span class="left"></span>
+							<span class="right"></span>
+						</div>
+						
+						<!-- contact form -->
+						<form id='email' role="form" class="form-horizontal contact-form">
+						
+							<div class="form-group">
+								<label for="name" class="col-sm-2 control-label">Name</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="name" placeholder="Robert Paulson">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label for="email" class="col-sm-2 control-label">Email</label>
+								<div class="col-sm-10">
+									<input type="email" class="form-control" id="email" placeholder="Enter email">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label for="comments" class="col-sm-2 control-label">Comments</label>
+								<div class="col-sm-10">
+									<textarea id="comments" class="form-control" rows="3"></textarea>
+								</div>
+							</div>
+							
+							<button type="submit" class="btn btn-default">Submit</button>
+						
+							<p>Or email me at NateSuri@gmail.com</p>
+						</form>
+						
+						
+					</li>
+					<li>
+						<h4>Site by <a href="https://twitter.com/_alexdef" target="_blank">@alexdef</a></h4>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+  </body>
 </html>

@@ -1,0 +1,844 @@
+/******* Variables *******/
+/*#F26522;*/
+/**** Baseline Styles *****/
+/* line 15, ../sass/style.scss */
+body {
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+}
+
+/* line 20, ../sass/style.scss */
+#display {
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+/* line 25, ../sass/style.scss */
+.info {
+  float: right;
+  font-style: italic;
+  font-size: 1.5em;
+  font-family: Times New Roman, serif;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 2em;
+  width: 2em;
+  height: 2em;
+  line-height: 1.85em;
+  text-align: center;
+  top: 1em;
+  position: relative;
+  z-index: 888;
+  cursor: pointer;
+}
+/* line 42, ../sass/style.scss */
+.info:hover {
+  color: #fff;
+}
+
+/* line 47, ../sass/style.scss */
+#nav {
+  background: #f5f5f5;
+  color: #5d3387;
+  padding: 0.5em 0;
+  border-bottom: 3px solid #111;
+  font-weight: bold;
+  font-size: 1.25em;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+}
+/* line 57, ../sass/style.scss */
+#nav ul li {
+  display: inline;
+  list-style-type: none;
+  padding: 1.5em 1em 0.75em 1em;
+}
+/* line 62, ../sass/style.scss */
+#nav ul li:hover {
+  background: #fff;
+  color: #111;
+}
+
+/* line 70, ../sass/style.scss */
+#mobile-arrows {
+  /* end left */
+}
+/* line 72, ../sass/style.scss */
+#mobile-arrows .left, #mobile-arrows .right {
+  width: 50%;
+  height: 50px;
+}
+/* line 77, ../sass/style.scss */
+#mobile-arrows .left {
+  background: #5d3387;
+  float: left;
+}
+/* line 81, ../sass/style.scss */
+#mobile-arrows .left #left-arrow-outline {
+  position: relative;
+}
+/* line 84, ../sass/style.scss */
+#mobile-arrows .left #left-arrow-outline span {
+  width: 25px;
+  height: 5px;
+  display: block;
+  background: #fff;
+  position: absolute;
+}
+/* line 92, ../sass/style.scss */
+#mobile-arrows .left #left-arrow-outline .left {
+  top: 15px;
+  left: 10%;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+  /* IE8 */
+  -moz-transform: rotate(-45deg);
+  /* FF3.5+ */
+  -ms-transform: rotate(-45deg);
+  /* IE9+ */
+  -o-transform: rotate(-45deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(-45deg);
+  /* Safari 3.1+, Chrome */
+  transform: rotate(-45deg);
+  /* Standard */
+}
+/* line 104, ../sass/style.scss */
+#mobile-arrows .left #left-arrow-outline .right {
+  top: 30px;
+  left: 10%;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+  /* IE8 */
+  -moz-transform: rotate(45deg);
+  /* FF3.5+ */
+  -ms-transform: rotate(45deg);
+  /* IE9+ */
+  -o-transform: rotate(45deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(45deg);
+  /* Safari 3.1+, Chrome */
+  transform: rotate(45deg);
+  /* Standard */
+}
+/* line 118, ../sass/style.scss */
+#mobile-arrows .right {
+  background: #666;
+  float: right;
+}
+/* line 122, ../sass/style.scss */
+#mobile-arrows .right #right-arrow-outline {
+  position: relative;
+}
+/* line 125, ../sass/style.scss */
+#mobile-arrows .right #right-arrow-outline span {
+  width: 25px;
+  height: 5px;
+  display: block;
+  background: #fff;
+  position: absolute;
+}
+/* line 132, ../sass/style.scss */
+#mobile-arrows .right #right-arrow-outline .left {
+  top: 30px;
+  left: 80%;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+  /* IE8 */
+  -moz-transform: rotate(-45deg);
+  /* FF3.5+ */
+  -ms-transform: rotate(-45deg);
+  /* IE9+ */
+  -o-transform: rotate(-45deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(-45deg);
+  /* Safari 3.1+, Chrome */
+  transform: rotate(-45deg);
+  /* Standard */
+}
+/* line 143, ../sass/style.scss */
+#mobile-arrows .right #right-arrow-outline .right {
+  top: 15px;
+  left: 80%;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+  /* IE8 */
+  -moz-transform: rotate(45deg);
+  /* FF3.5+ */
+  -ms-transform: rotate(45deg);
+  /* IE9+ */
+  -o-transform: rotate(45deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(45deg);
+  /* Safari 3.1+, Chrome */
+  transform: rotate(45deg);
+  /* Standard */
+}
+
+/* line 158, ../sass/style.scss */
+.home #mobile-arrows {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 166, ../sass/style.scss */
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object {
+  max-height: 550px;
+}
+
+/* line 170, ../sass/style.scss */
+h2 {
+  padding-bottom: .5em;
+  line-height: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+/* line 178, ../sass/style.scss */
+p {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+/* line 183, ../sass/style.scss */
+a {
+  color: #9066ba;
+}
+/* line 186, ../sass/style.scss */
+a:hover {
+  color: #5d3387;
+}
+
+/******* Arrow Bar Styles *******/
+/* line 202, ../sass/style.scss */
+#left-bar,
+#right-bar,
+#down-bar,
+.tv #right-bar .title,
+.tv #down-bar .title,
+.video #left-bar .title,
+.video #right-bar .title,
+.film #left-bar .title,
+.film #down-bar .title {
+  display: none;
+}
+
+/* line 206, ../sass/style.scss */
+#left-bar {
+  left: 0;
+}
+
+/* line 210, ../sass/style.scss */
+#right-bar {
+  right: 0;
+}
+
+/* line 214, ../sass/style.scss */
+.left-film-arrow {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #60c7cc;
+}
+
+/* line 220, ../sass/style.scss */
+.down-video-arrow {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ef293a;
+}
+
+/* line 226, ../sass/style.scss */
+.right-tv-arrow {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #77cc33;
+}
+
+/* line 233, ../sass/style.scss */
+.tv #callout-buttons, .film #callout-buttons, .video #callout-buttons {
+  display: none;
+}
+
+/* line 237, ../sass/style.scss */
+#callout-buttons {
+  display: block;
+}
+/* line 240, ../sass/style.scss */
+#callout-buttons .button {
+  width: 100%;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 1em 2em;
+  display: block;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+/* line 250, ../sass/style.scss */
+#callout-buttons #tv-btn {
+  border: 4px solid #77cc33;
+  color: #77cc33;
+}
+/* line 255, ../sass/style.scss */
+#callout-buttons #video-btn {
+  border: 4px solid #ef293a;
+  color: #ef293a;
+}
+/* line 260, ../sass/style.scss */
+#callout-buttons #film-btn {
+  border: 4px solid #60c7cc;
+  color: #60c7cc;
+}
+
+/******* Home Styles *******/
+/* line 269, ../sass/style.scss */
+.home {
+  background: #f1f1f1;
+  color: #555;
+}
+/* line 273, ../sass/style.scss */
+.home .logo {
+  text-align: center;
+  margin-top: 5em;
+}
+/* line 277, ../sass/style.scss */
+.home .logo img {
+  margin-bottom: 2em;
+}
+/* line 281, ../sass/style.scss */
+.home .info {
+  border: 2px solid #5D3387;
+  color: #5D3387;
+}
+/* line 284, ../sass/style.scss */
+.home .info:hover {
+  background: #5d3387;
+  color: #fff;
+}
+
+/******* TV Section Styles *******/
+/* line 294, ../sass/style.scss */
+.tv {
+  color: #77cc33;
+  background: rgba(119, 204, 51, 0.3);
+}
+/* line 299, ../sass/style.scss */
+.tv #mobile-arrows .left {
+  background: rgba(119, 204, 51, 0.3);
+}
+/* line 302, ../sass/style.scss */
+.tv #mobile-arrows .right {
+  background: rgba(119, 204, 51, 0.7);
+}
+/* line 306, ../sass/style.scss */
+.tv .info {
+  border: 2px solid #77cc33;
+  color: #77cc33;
+}
+/* line 310, ../sass/style.scss */
+.tv .info:hover {
+  background: #77cc33;
+  color: #fff;
+}
+/* line 316, ../sass/style.scss */
+.tv #left-bar,
+.tv #right-bar {
+  background: #77cc33;
+}
+
+/******* Video Section Styles *******/
+/* line 324, ../sass/style.scss */
+.video {
+  color: #ef293a;
+  background: rgba(242, 101, 34, 0.3);
+}
+/* line 329, ../sass/style.scss */
+.video #mobile-arrows .left {
+  background: rgba(242, 101, 34, 0.3);
+}
+/* line 332, ../sass/style.scss */
+.video #mobile-arrows .right {
+  background: rgba(242, 101, 34, 0.7);
+}
+/* line 336, ../sass/style.scss */
+.video .info {
+  color: #ef293a;
+  border: 2px solid #ef293a;
+}
+/* line 340, ../sass/style.scss */
+.video .info:hover {
+  background: #ef293a;
+  color: #fff;
+}
+/* line 346, ../sass/style.scss */
+.video .background {
+  margin-bottom: 6em;
+}
+
+/******* Film Section Styles *******/
+/* line 356, ../sass/style.scss */
+.film {
+  color: #60c7cc;
+  background: rgba(96, 199, 204, 0.3);
+}
+/* line 361, ../sass/style.scss */
+.film #mobile-arrows .left {
+  background: rgba(96, 199, 204, 0.3);
+}
+/* line 364, ../sass/style.scss */
+.film #mobile-arrows .right {
+  background: rgba(96, 199, 204, 0.7);
+}
+/* line 368, ../sass/style.scss */
+.film .info {
+  color: #60C7CC;
+  border: 2px solid #60C7CC;
+}
+/* line 372, ../sass/style.scss */
+.film .info:hover {
+  background: #60c7cc;
+  color: #fff;
+}
+
+/******* Popover Styles *******/
+/* line 382, ../sass/style.scss */
+#popover {
+  background: rgba(93, 51, 135, 0.85);
+  height: 100%;
+  width: 100%;
+  padding: 2em 5%;
+  position: absolute;
+  top: 0;
+  overflow: scroll;
+  color: #fff;
+  font-size: 3em;
+}
+/* line 393, ../sass/style.scss */
+#popover ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 398, ../sass/style.scss */
+#popover ul li {
+  list-style-type: none;
+  border-bottom: 5px solid #5D3387;
+  line-height: 2em;
+}
+/* line 404, ../sass/style.scss */
+#popover ul ul.social-media {
+  text-align: left;
+}
+/* line 407, ../sass/style.scss */
+#popover ul ul.social-media li {
+  display: inline-block;
+  border: none;
+  line-height: 1em;
+}
+/* line 414, ../sass/style.scss */
+#popover ul ul.social-media li a,
+#popover ul ul.social-media li a:link,
+#popover ul ul.social-media li a:visited {
+  color: #fff;
+}
+/* line 418, ../sass/style.scss */
+#popover ul ul.social-media li a:hover, #popover ul ul.social-media li a:active,
+#popover ul ul.social-media li a:link:hover,
+#popover ul ul.social-media li a:link:active,
+#popover ul ul.social-media li a:visited:hover,
+#popover ul ul.social-media li a:visited:active {
+  color: #9066ba;
+  text-decoration: none;
+}
+/* line 427, ../sass/style.scss */
+#popover.active {
+  display: block;
+  visibility: visible;
+}
+/* line 432, ../sass/style.scss */
+#popover.inactive {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 438, ../sass/style.scss */
+.blur {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+  position: fixed;
+}
+
+/* line 447, ../sass/style.scss */
+.close {
+  opacity: 1.0;
+}
+/* line 451, ../sass/style.scss */
+.close .left-x,
+.close .right-x {
+  width: 3em;
+  height: 10px;
+  background: #fff;
+  float: right;
+}
+/* line 458, ../sass/style.scss */
+.close .right-x {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+  /* IE8 */
+  -moz-transform: rotate(-45deg);
+  /* FF3.5+ */
+  -ms-transform: rotate(-45deg);
+  /* IE9+ */
+  -o-transform: rotate(-45deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(-45deg);
+  /* Safari 3.1+, Chrome */
+  transform: rotate(-45deg);
+  /* Standard */
+  margin-right: -3em;
+}
+/* line 469, ../sass/style.scss */
+.close .left-x {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+  /* IE8 */
+  -moz-transform: rotate(45deg);
+  /* FF3.5+ */
+  -ms-transform: rotate(45deg);
+  /* IE9+ */
+  -o-transform: rotate(45deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(45deg);
+  /* Safari 3.1+, Chrome */
+  transform: rotate(45deg);
+  /* Standard */
+}
+
+/********** Contact Me Form ***********/
+/* line 484, ../sass/style.scss */
+.contact {
+  position: relative;
+}
+/* line 487, ../sass/style.scss */
+.contact .contact-form {
+  text-align: left;
+  padding: 1em 0 1.5em 0;
+  max-height: 1000px;
+  -webkit-transition: max-height 5s;
+  -moz-transition: max-height 5s;
+  transition: max-height 5s;
+}
+/* line 495, ../sass/style.scss */
+.contact .contact-form label, .contact .contact-form p {
+  font-weight: normal;
+  font-size: 0.5em;
+  line-height: 1.5em;
+}
+/* line 501, ../sass/style.scss */
+.contact .contact-form p {
+  margin-top: 3.5em;
+}
+/* line 505, ../sass/style.scss */
+.contact .contact-form button {
+  float: right;
+  margin-bottom: 1em;
+}
+/* line 510, ../sass/style.scss */
+.contact .contact-form.hide {
+  max-height: 0;
+  transition: max-height 3s ease-out;
+}
+
+/* line 517, ../sass/style.scss */
+.closed-arrow {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+/* line 521, ../sass/style.scss */
+.closed-arrow span {
+  width: 0.9em;
+  height: 10px;
+  display: block;
+  background-color: #fff;
+}
+/* line 528, ../sass/style.scss */
+.closed-arrow span.right {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+  /* IE8 */
+  -moz-transform: rotate(-45deg);
+  /* FF3.5+ */
+  -ms-transform: rotate(-45deg);
+  /* IE9+ */
+  -o-transform: rotate(-45deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(-45deg);
+  /* Safari 3.1+, Chrome */
+  transform: rotate(-45deg);
+  /* Standard */
+}
+/* line 537, ../sass/style.scss */
+.closed-arrow span.left {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+  /* IE8 */
+  -moz-transform: rotate(45deg);
+  /* FF3.5+ */
+  -ms-transform: rotate(45deg);
+  /* IE9+ */
+  -o-transform: rotate(45deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(45deg);
+  /* Safari 3.1+, Chrome */
+  transform: rotate(45deg);
+  /* Standard */
+  position: absolute;
+  right: 0.5em;
+}
+
+/* line 550, ../sass/style.scss */
+.open-arrow {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+/* line 554, ../sass/style.scss */
+.open-arrow span {
+  width: 0.9em;
+  height: 10px;
+  display: block;
+  background-color: #fff;
+}
+/* line 561, ../sass/style.scss */
+.open-arrow span.left {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+  /* IE8 */
+  -moz-transform: rotate(-45deg);
+  /* FF3.5+ */
+  -ms-transform: rotate(-45deg);
+  /* IE9+ */
+  -o-transform: rotate(-45deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(-45deg);
+  /* Safari 3.1+, Chrome */
+  transform: rotate(-45deg);
+  /* Standard */
+  position: absolute;
+  right: 0.5em;
+}
+/* line 572, ../sass/style.scss */
+.open-arrow span.right {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+  /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+  /* IE8 */
+  -moz-transform: rotate(45deg);
+  /* FF3.5+ */
+  -ms-transform: rotate(45deg);
+  /* IE9+ */
+  -o-transform: rotate(45deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(45deg);
+  /* Safari 3.1+, Chrome */
+  transform: rotate(45deg);
+  /* Standard */
+}
+
+@media screen and (min-width: 778px) {
+  /* line 5, ../sass/media.scss */
+  .background {
+    margin-top: 0;
+  }
+
+  /* line 9, ../sass/media.scss */
+  #mobile-arrows {
+    display: none;
+  }
+
+  /* line 14, ../sass/media.scss */
+  #left-bar,
+  #right-bar {
+    height: 100%;
+    position: fixed;
+    display: block;
+    top: 0px;
+    font-size: 3em;
+    padding: 0 15px;
+    width: 100px;
+    font-weight: bold;
+  }
+
+  /* line 26, ../sass/media.scss */
+  .tv #left-bar, .tv #right-bar, .film #left-bar, .film #right-bar, .video #left-bar, .video #right-bar {
+    background: none;
+  }
+
+  /* line 31, ../sass/media.scss */
+  #left-bar {
+    left: 0;
+  }
+  /* line 35, ../sass/media.scss */
+  #left-bar:hover, #left-bar.active {
+    border-left: 35px solid rgba(119, 204, 51, 0.3);
+  }
+  /* line 40, ../sass/media.scss */
+  #left-bar a {
+    display: block;
+    color: #77cc33;
+    position: fixed;
+    left: -30px;
+    top: 45%;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+    /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+    /* IE8 */
+    -moz-transform: rotate(-90deg);
+    /* FF3.5+ */
+    -ms-transform: rotate(-90deg);
+    /* IE9+ */
+    -o-transform: rotate(-90deg);
+    /* Opera 10.5 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari 3.1+, Chrome */
+    transform: rotate(-90deg);
+    /* Standard */
+  }
+  /* line 55, ../sass/media.scss */
+  #left-bar #left-arrow {
+    width: 0;
+    height: 0;
+    position: fixed;
+    left: 15px;
+    top: 45%;
+  }
+  /* line 62, ../sass/media.scss */
+  #left-bar #left-arrow.active {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #77cc33;
+  }
+
+  /* line 70, ../sass/media.scss */
+  #right-bar {
+    right: 0;
+  }
+  /* line 74, ../sass/media.scss */
+  #right-bar:hover, #right-bar.active {
+    border-right: 35px solid rgba(96, 199, 204, 0.3);
+  }
+  /* line 78, ../sass/media.scss */
+  #right-bar a {
+    display: block;
+    color: #60C7CC;
+    position: fixed;
+    right: 30px;
+    top: 45%;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+    /*IE6,IE7*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+    /*IE8*/
+    -moz-transform: rotate(90deg);
+    /* FF3.5+ */
+    -ms-transform: rotate(90deg);
+    /* IE9+ */
+    -o-transform: rotate(90deg);
+    /* Opera 10.5 */
+    -webkit-transform: rotate(90deg);
+    /* Safari 3.1+, Chrome */
+    transform: rotate(90deg);
+    /* Standard */
+  }
+  /* line 92, ../sass/media.scss */
+  #right-bar #right-arrow {
+    width: 0;
+    height: 0;
+    position: fixed;
+    right: 15px;
+    top: 45%;
+  }
+  /* line 99, ../sass/media.scss */
+  #right-bar #right-arrow.active {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #60C7CC;
+  }
+
+  /* line 107, ../sass/media.scss */
+  #down-bar {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: block;
+    bottom: 0px;
+    left: 0px;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+  }
+  /* line 120, ../sass/media.scss */
+  #down-bar:hover, #down-bar.active {
+    border-bottom: 35px solid rgba(239, 41, 58, 0.3);
+  }
+  /* line 124, ../sass/media.scss */
+  #down-bar a {
+    color: #ef293a;
+    text-align: center;
+  }
+  /* line 128, ../sass/media.scss */
+  #down-bar #down-arrow {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+  }
+  /* line 136, ../sass/media.scss */
+  #down-bar #down-arrow.active {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ef293a;
+  }
+
+  /* line 144, ../sass/media.scss */
+  #callout-buttons {
+    display: none;
+  }
+
+  /* line 148, ../sass/media.scss */
+  .col-lg-10 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 153, ../sass/media.scss */
+  #popover {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+@media screen and (min-width: 950px) {
+  /* line 165, ../sass/media.scss */
+  #popover {
+    width: 80%;
+    margin: 0 10%;
+  }
+}

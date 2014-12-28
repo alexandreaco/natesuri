@@ -1,0 +1,127 @@
+@media screen and (min-width: 778px) {
+
+	
+	#left-bar, 
+	#right-bar {
+		height: 100%;
+		position: fixed;
+		display: block;
+		top: 0px;
+		font-size: 3em;
+		padding: 0 15px;
+		width: 100px;
+		font-weight: bold;
+	}
+
+	#left-bar {
+		left: 0;
+	}
+	
+	#left-bar:hover {
+		border-left: 35px solid rgba(242,101,34, 0.3);
+	}
+
+	#right-bar {
+		right: 0;
+	}
+
+	#right-bar:hover {
+		border-right: 35px solid rgba(96,199,204, 0.3);
+	}
+	
+	#left-bar a {
+		display: block;
+		color: #F26522;
+		position: fixed;
+		left: -30px;
+		top: 45%;
+							 filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /* IE6,IE7 */
+					 -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */
+			 -moz-transform: rotate(-90.0deg);  /* FF3.5+ */
+				-ms-transform: rotate(-90.0deg);  /* IE9+ */
+				 -o-transform: rotate(-90.0deg);  /* Opera 10.5 */
+		-webkit-transform: rotate(-90.0deg);  /* Safari 3.1+, Chrome */
+						transform: rotate(-90.0deg);  /* Standard */
+	}
+
+	#left-bar #left-arrow {
+		width: 0; 
+		height: 0; 
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent; 
+		border-right: 10px solid #F26522; 
+		position: fixed;
+		left: 15px;
+		top: 45%;
+	}
+
+	#right-bar a {
+		display: block;
+		color: #60C7CC;
+		position: fixed;
+		right: 30px;
+		top: 45%;
+							 filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /*IE6,IE7*/
+					 -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /*IE8*/
+			 -moz-transform: rotate(90.0deg);  /* FF3.5+ */
+				-ms-transform: rotate(90.0deg);  /* IE9+ */
+				 -o-transform: rotate(90.0deg);  /* Opera 10.5 */
+		-webkit-transform: rotate(90.0deg);  /* Safari 3.1+, Chrome */
+						transform: rotate(90.0deg);  /* Standard */
+	}
+
+	#right-bar #right-arrow {
+		width: 0;
+		height: 0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 10px solid #60C7CC;
+		position: fixed;
+		right: 15px;
+		top: 45%;
+	}
+
+	#down-bar {
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		display: block;
+		bottom: 0px;
+		left: 0px;
+		font-size: 3em;
+		font-weight: bold;
+		text-align: center;
+		padding: 15px 0;
+	}
+	
+	#down-bar:hover {
+		border-bottom: 35px solid rgba(239,41,58, 0.3);
+	}
+
+	#down-bar a {
+		color: #ef293a;
+		text-align: center;
+	}
+
+	#down-bar #down-arrow {
+		width: 0; 
+		height: 0; 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid #ef293a;
+		margin: 0 auto;
+		position: absolute;
+		bottom: 15px;
+		left: 50%;
+	}
+	
+	#callout-buttons {
+		display: none;
+	}
+	
+	
+	.col-lg-10 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+} /* /end 678px */
