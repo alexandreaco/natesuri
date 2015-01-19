@@ -58,7 +58,7 @@ function moveScreen($category, $depth) {
 		$("#display").html( 
 		"<div class='row'><div class='col-sm-2'></div><div class='col-sm-8 logo'><img src='img/natesuri.png' /><h3>Boston - New York - Los Angeles</h3></div><div class='col-sm-2'></div></div>" + 
 		"<div class='row'></div>" + 
-		"<div class='row'><div class='col-sm-2'></div><div class='col-sm-8'><h3>I'm a BU film student and I'm in love with my super attractive girlfriend. I also have a duck farm and play jazz piano. People think I'm the bee's knees and my smile lines are freaking adorable.</h3></div><div class='col-sm-2'></div></div>");
+		"<div class='row'><div class='col-sm-2'></div><div class='col-sm-8'><h3>Nate Suri, freelance filmmaker, Boston University Class of 2015. I love writing with both the pen and the camera, using lighting and movement to tell each characters' story.</h3></div><div class='col-sm-2'></div></div>");
 	}
 
 

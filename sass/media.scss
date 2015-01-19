@@ -6,6 +6,10 @@
 		margin-top: 0;
 	}	
 	
+	.home .logo img {
+		max-width: none;
+	}
+	
 	#mobile-arrows {
 		display: none;
 	}
@@ -153,6 +157,7 @@
 	#popover {
 		width: 90%;
 		margin: 0 5%;
+		font-size: 3em;
 	}
 }
 

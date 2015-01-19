@@ -26,7 +26,7 @@ function Project($title, $type, $embed, $description, $roles)
 		"</h2><div class='col-lg-1'></div></div><div class='row'><div class='col-lg-1'></div> <div class='embed embed-responsive embed-responsive-16by9 col-lg-10'>" 
 		+ this.embed + 
 		"</div><div class='col-lg-1'></div></div><div class='row'><div class='col-lg-1'></div><h3 class='description col-lg-10'>"
-		+ this.description + 
+		+ "<p>" + this.description + "</p>" + 
 		"</h3><div class='col-lg-1'></div></div><div class='row'><div class='col-lg-1'></div><div class='roles col-lg-10'>" 
 		+ this.roles + 
 		"<div class='col-lg-1'></div></div></div> </div>";

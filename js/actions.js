@@ -19,6 +19,8 @@ var goToVideo = function() {
 	$("body").removeClass("film");
 	$("body").removeClass("tv");
 	
+	$("#left-arrow").toggleClass("hide");
+	$("#right-arrow").toggleClass("hide");
 	$("#down-bar").toggleClass("active");
 	$("#up-arrow").removeClass("active");
 	$("#up-arrow").addClass("up-back-arrow");
